@@ -26,7 +26,7 @@ let gitHubDefinition = 'A company that runs a website offering a cloud based Git
 */
 
 //CODE HERE
-let gitInitDefinition = 'creates a local .git repository in whatever location folder you are currently in and enables git tracking.'
+let gitInitDefinition = 'creates a local git repository in whatever location folder you are currently in and enables git tracking.'
 //////////////////PROBLEM 4////////////////////
 /*
     Create a variable called 'gitCloneDefinition'.  
