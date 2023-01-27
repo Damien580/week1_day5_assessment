@@ -42,5 +42,5 @@ for (i = 0; i < bigOrSmallArray.length; i++){
   if (bigOrSmallArray[i] <= 100){
     answers.push('small')
   } else answers.push('big')
-  console.log(answers)
 }
+console.log(answers)
