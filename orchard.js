@@ -75,8 +75,6 @@ console.log(`${totalAcres} acres picked this week.`)
 */
 
 // CODE HERE
-let total = 0
-
 let averageDailyAcres = totalAcres / allAcres.length
 console.log(averageDailyAcres)
 
