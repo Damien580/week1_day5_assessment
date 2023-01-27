@@ -172,7 +172,7 @@ for (i = 0; i < fujiAcres.length; i++){
     fujiTons = tonsFuji * 6.5
 }
 console.log(fujiTons, galaTons, pinkTons)
-
+//Looks like I totaled the arrays into weekly Tons for each type 
 
 
 
@@ -199,6 +199,7 @@ let galaPounds = galaTons * 2000
 let pinkPounds = pinkTons * 2000
 
 console.log(fujiPounds, galaPounds, pinkPounds)
+
 
 
 
