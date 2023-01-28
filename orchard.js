@@ -57,7 +57,7 @@ let totalAcres = 0;
 for (i = 0; i in allAcres; i++){
    totalAcres += allAcres[i]
 }
-console.log(`${totalAcres} acres picked this week.`)
+// console.log(`${totalAcres} acres picked this week.`)
 
 
 
@@ -76,7 +76,7 @@ console.log(`${totalAcres} acres picked this week.`)
 
 // CODE HERE
 let averageDailyAcres = totalAcres / allAcres.length
-console.log(averageDailyAcres)
+// console.log(averageDailyAcres)
 
 
 
@@ -115,7 +115,7 @@ let days = 0
 
 // CODE HERE
 while (acresLeft > 0){
-    console.log(days)
+    // console.log(days)
     days = days + 1 
     acresLeft = acresLeft - 3  
 }
@@ -151,30 +151,12 @@ let galaTons = 0
 let pinkTons = 0
 let fujiTons = 0
 
-let tonsGala = 0
-let tonsPink = 0
-let tonsFuji = 0
-
+//each type of apple will need to be plugged in to get individual results.
 for (i = 0; i < fujiAcres.length; i++){
-    tonsGala += galaAcres[i]
-    galaTons = tonsGala * 6.5
-}
-
-
-for (i = 0; i < fujiAcres.length; i++){
-    tonsPink += pinkAcres[i]
-    pinkTons = tonsPink * 6.5
-}
-
-
-for (i = 0; i < fujiAcres.length; i++){
-    tonsFuji += fujiAcres[i]
-    fujiTons = tonsFuji * 6.5
-}
-console.log(fujiTons, galaTons, pinkTons)
-//Looks like I totaled the arrays into weekly Tons for each type 
-
-
+    fujiAcres[i] = fujiAcres[i] * 6.5
+    fujiTons = fujiAcres
+   }
+console.log(fujiTons)
 
 // PROBLEM 5
 
@@ -194,16 +176,17 @@ console.log(fujiTons, galaTons, pinkTons)
 
 // CODE HERE 
 
-let fujiPounds = fujiTons * 2000
-let galaPounds = galaTons * 2000
-let pinkPounds = pinkTons * 2000
+let fujiPounds =0
+let galaPounds = 0
+let pinkPounds = 0
 
-console.log(fujiPounds, galaPounds, pinkPounds)
-
-
-
-
-
+//each type of apple will need to be input to get the individual results.
+for (i = 0; i < fujiTons.length; i++){
+   fujiTons[i] = fujiTons[i] * 2000
+   fujiPounds = fujiTons
+}
+console.log(fujiPounds)
+//UPDATED MY ANSWER TO REFLECT DAILY VALUES
 
 
 // PROBLEM 6
@@ -228,11 +211,16 @@ console.log(fujiPounds, galaPounds, pinkPounds)
 // const galaPrice = .64 //per lb
 // const pinkPrice = .55 //per lb
 
-let fujiProfit = fujiPounds * fujiPrice
-let galaProfit = galaPounds * galaPrice
-let pinkProfit = pinkPounds * pinkPrice
+let fujiProfit = 0
+let galaProfit = 0
+let pinkProfit = 0
 
-console.log(fujiProfit, galaProfit, pinkProfit)
+//here is the loop to figure out daily profits. each type of apple and each corresponding price per lb will need to be input individually.
+for (i = 0; i < fujiPounds.length; i++){
+    fujiPounds[i] = fujiPounds[i] * .89
+    fujiProfit = fujiPounds
+}
+console.log(fujiProfit)
 
 
 
@@ -252,4 +240,4 @@ console.log(fujiProfit, galaProfit, pinkProfit)
 // CODE HERE
 let totalProfit = fujiProfit + galaProfit + pinkProfit
 
-console.log(totalProfit)
+// console.log(totalProfit)
